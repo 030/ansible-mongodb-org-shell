@@ -1,1 +1,8 @@
 ---
+- name: Add mongo apt repository
+  apt_repository:
+    repo: deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse
+
+- name: Install mongodb org shell
+  apt:
+    name: mongodb-org-shell
