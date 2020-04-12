@@ -1,4 +1,9 @@
 ---
+- name: Install gnupg
+  apt:
+    name: gnupg
+    update_cache: yes
+
 - name: Add mongo apt key
   apt_key:
     url: https://www.mongodb.org/static/pgp/server-4.2.asc
@@ -10,3 +15,4 @@
 - name: Install mongodb org shell
   apt:
     name: mongodb-org-shell
+    update_cache: yes
