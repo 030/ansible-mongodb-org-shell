@@ -2,7 +2,7 @@
 - name: Install gnupg
   apt:
     name: gnupg
-    update_cache: yes
+    update_cache: true
 
 - name: Add mongo apt key
   apt_key:
@@ -15,4 +15,4 @@
 - name: Install mongodb org shell
   apt:
     name: mongodb-org-shell
-    update_cache: yes
+    update_cache: true
